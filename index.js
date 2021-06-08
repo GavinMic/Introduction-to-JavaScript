@@ -46,10 +46,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-var year="1999"
-  if ("1999"===1999); {
-    console.log(1999);
-  }
+var year='1999'
+  Number('1999');
+  console.log(Number);
 /*
 Task 1d - Multiply
  
@@ -78,12 +77,8 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-function dogYears(){
-  let count=19;
-  console.log('count');
-  count +7;
-}
-//return 133
+
+
 
 
 
@@ -123,8 +118,18 @@ function hungryDog(weight, age){
     return weight * 0.03;
   }else if (age >=1 && weight >15){
     return weight * 0.02;
+  }else if (age < 1 && age >=0.583){
+    return weight * 0.04;
+  }else if (age < 0.583 && age >= 0.333){
+    return weight * 0.05;
+  } else if (age < 0.333){
+    return weight * 0.10;
+  }else{
+    return 'please try again';
   }
 }
+
+console.log('task 3', hungryDog (15,1));
   
 
 
@@ -149,10 +154,8 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
-function game(user, computer){
-    /*add your code here*/
-}
+//1=rock, 2=scissors, 3=paper//
+function game(user, computer)
   
   
 
@@ -166,13 +169,12 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
+//Set KM to 17//
+function miles(num1, num2){
+    return (num1*num2);
   }
-
-
-
+//There are 0.621371//
+miles(17*0.621371);
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -180,11 +182,11 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
-
-function feet(/*add your code here*/){
-    /*add your code here*/
+//feet=num2 and cm per foot=num1
+function feet(num1, num2){
+    return (num1*num2)
   }
- 
+ feet (30.48*27);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
